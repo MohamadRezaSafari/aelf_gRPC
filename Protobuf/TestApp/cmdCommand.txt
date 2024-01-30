@@ -1,0 +1,1 @@
+﻿.\protoc.exe -I=D:\Develop\aelf_gRPC\Protobuf --csharp_out=D:\Develop\aelf_gRPC\Protobuf\TestApp D:\Develop\aelf_gRPC\Protobuf\TestApp\Proto\employee.proto
