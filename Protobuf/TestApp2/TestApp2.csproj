@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Google.Protobuf" Version="3.25.2" />
+		<PackageReference Include="Google.Protobuf.Tools" Version="3.25.2" />
+		<PackageReference Include="SilentOrbit.ProtocolBuffers.ProtocolBufferParser" Version="0.0.1" />
+		<PackageReference Include="SilentOrbit.ProtocolBuffers.SourceGenerator" Version="0.0.1" />
+		<AdditionalFiles Include="**\*.proto" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <AdditionalFiles Remove="Proto\employee.proto" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+</Project>
